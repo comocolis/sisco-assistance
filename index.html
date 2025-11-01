@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Assistance informatique à domicile et à distance en Île-de-France. Dépannage, installation de logiciels, optimisation et formation personnalisée." />
+  <meta name="description" content="Assistance informatique à domicile et à distance en Île-de-France. Dépannage, installation de logiciels, optimisation, et formation personnalisée." />
+  <meta name="keywords" content="assistance informatique, dépannage, réparation ordinateur, installation logiciels, Île-de-France" />
   <meta name="author" content="Sisco Assistance Informatique" />
   <title>Sisco Assistance Informatique | Île-de-France</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -14,87 +15,149 @@
   <!-- HEADER -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
+      <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <!-- Replace with Base64 logo -->
-        <img src="https://images.unsplash.com/photo-1581092334494-7b06a1b6f9c4?w=80" alt="Logo Sisco Assistance Informatique" class="w-10 h-10 rounded-full shadow-sm">
+        <img src="data:image/png;base64,{{BASE64_LOGO}}" alt="Logo Sisco Assistance Informatique" class="w-10 h-10 rounded-full shadow-sm">
         <h1 class="text-lg font-semibold text-blue-700">Sisco Assistance Informatique</h1>
       </div>
+
+      <!-- Navigation -->
       <nav class="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="#home" class="hover:text-green-600">Accueil</a>
-        <a href="#services" class="hover:text-green-600">Services</a>
-        <a href="#contact" class="hover:text-green-600">Contact</a>
+        <a href="#home" class="hover:text-green-600 transition">Accueil</a>
+        <a href="#services" class="hover:text-green-600 transition">Services</a>
+        <a href="#contact" class="hover:text-green-600 transition">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section id="home" class="text-center py-16 bg-gradient-to-b from-blue-50 to-green-50">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
-        Assistance Informatique à Domicile & à Distance
-      </h2>
-      <p class="text-lg text-gray-700 mb-8">
-        Dépannage, installation, maintenance et accompagnement en Île-de-France.
-      </p>
-      <button onclick="Tawk_API.toggle();" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Assistance Informatique à Domicile & à Distance</h2>
+      <p class="text-lg text-gray-700 mb-8">Dépannage, installation, maintenance et accompagnement en Île-de-France.</p>
+      <button onclick="Tawk_API.toggle();" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
         Demander un devis
       </button>
     </div>
   </section>
-
-  <!-- SERVICES -->
+  <!-- SERVICES SECTION -->
   <section id="services" class="py-16 bg-white">
     <div class="container mx-auto px-6">
       <h3 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">Nos Services</h3>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Example service block -->
+        
+        <!-- 1️⃣ Ordinateurs portables et de bureau -->
         <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Réparation ordinateurs" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_PC}}" alt="Réparation ordinateurs portables et de bureau" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
           <h4 class="text-xl font-semibold text-green-700 mb-2">Ordinateurs portables et de bureau</h4>
           <p class="text-gray-700 text-sm leading-relaxed">
-            Diagnostic, réparation, installation de logiciels, configuration d’imprimante et optimisation.
+            Diagnostic, réparation, installation de logiciels, configuration d’imprimante ou d’Internet, et optimisation contre les lenteurs et virus.
           </p>
         </div>
 
+        <!-- 2️⃣ Téléphones et tablettes -->
         <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1580894908361-967195033215?w=800" alt="Téléphones et tablettes" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_PHONE}}" alt="Assistance pour téléphones et tablettes" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
           <h4 class="text-xl font-semibold text-green-700 mb-2">Téléphones et tablettes</h4>
           <p class="text-gray-700 text-sm leading-relaxed">
-            Problèmes d’applications, mémoire pleine, mises à jour et réglages de comptes mobiles.
+            Résolution de problèmes d’applications, mises à jour, mémoire pleine, et réglages de comptes mobiles.
           </p>
         </div>
 
+        <!-- 3️⃣ Utilisation Internet & Réseaux sociaux -->
         <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800" alt="Création digitale" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
-          <h4 class="text-xl font-semibold text-green-700 mb-2">Création digitale & site web</h4>
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_SOCIAL}}" alt="Aide Internet et réseaux sociaux" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Internet & Réseaux sociaux</h4>
           <p class="text-gray-700 text-sm leading-relaxed">
-            Création de sites vitrines et accompagnement pour promouvoir votre activité en ligne.
+            Aide pour navigation, mots de passe oubliés, comptes bloqués et sécurisation des profils en ligne.
           </p>
         </div>
-        <!-- Duplicate the same pattern for remaining categories -->
+
+        <!-- 4️⃣ Création digitale & site web -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_WEB}}" alt="Création de site web et graphisme" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Création digitale & site web</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Création de sites vitrines, portfolios ou e-commerce, et accompagnement pour promouvoir votre activité en ligne.
+          </p>
+        </div>
+
+        <!-- 5️⃣ Installation et activation de logiciels -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_SOFTWARE}}" alt="Installation et activation de logiciels" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Installation et activation de logiciels</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Installation, configuration et activation de logiciels comme Microsoft Office, Photoshop, AutoCAD et autres outils professionnels.
+          </p>
+        </div>
+
+        <!-- 6️⃣ Assistance à distance & maintenance -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_REMOTE}}" alt="Assistance informatique à distance" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Assistance à distance & maintenance</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Prise en main à distance sécurisée pour dépannage, installation, et suivi de performance en temps réel.
+          </p>
+        </div>
+
+        <!-- 7️⃣ Sécurité, sauvegarde & optimisation système -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_SECURITY}}" alt="Sécurité et optimisation du système" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Sécurité, sauvegarde & optimisation</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Nettoyage de virus, optimisation du démarrage, sauvegardes automatiques et protection de vos données.
+          </p>
+        </div>
+
+        <!-- 8️⃣ Périphériques & réseau domestique -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_NETWORK}}" alt="Installation de périphériques et réseau domestique" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Périphériques & réseau domestique</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Installation et configuration d’imprimantes, scanners, Wi-Fi, et box Internet pour un usage fluide au quotidien.
+          </p>
+        </div>
+
+        <!-- 9️⃣ Formation & accompagnement -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="data:image/jpeg;base64,{{BASE64_TRAINING}}" alt="Formation et accompagnement informatique" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Formation & accompagnement personnalisé</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Apprentissage sur mesure : initiation à l’informatique, bureautique, sécurité Internet, et usages professionnels.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
-
-  <!-- CONTACT -->
+  <!-- CONTACT / CALL TO ACTION -->
   <section id="contact" class="bg-green-50 py-16 text-center">
     <div class="container mx-auto px-6">
       <h3 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6">Besoin d’aide ou d’un devis ?</h3>
       <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
         Contactez-moi pour toute assistance informatique à domicile ou à distance en Île-de-France.
+        Que ce soit pour un dépannage, une installation, une formation ou la création d’un site web, je suis à votre service.
       </p>
+
       <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-        <a href="mailto:sisco.assistance.informatique@gmail.com" class="bg-blue-700 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800">✉️ Envoyer un e-mail</a>
-        <a href="tel:+33758760743" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">📞 Appeler maintenant</a>
-        <button onclick="Tawk_API.toggle();" class="bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900">💬 Discuter en direct</button>
+        <a href="mailto:sisco.assistance.informatique@gmail.com" class="bg-blue-700 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
+          ✉️ Envoyer un e-mail
+        </a>
+        <a href="tel:+33758760743" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+          📞 Appeler maintenant
+        </a>
+        <button onclick="Tawk_API.toggle();" class="bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900 transition">
+          💬 Discuter en direct
+        </button>
       </div>
     </div>
   </section>
-
   <!-- FOOTER -->
   <footer class="bg-gradient-to-r from-blue-50 to-green-50 py-10 mt-16 border-t border-gray-200">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 text-sm">
+      
+      <!-- Zone -->
       <div class="flex items-start space-x-3">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -105,6 +168,7 @@
         <p><strong>Zone d’intervention :</strong><br>Île-de-France</p>
       </div>
 
+      <!-- Contact -->
       <div class="flex items-start space-x-3">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -119,6 +183,7 @@
         </p>
       </div>
 
+      <!-- Signature -->
       <div class="flex items-start space-x-3">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09A6.003 6.003 0 0118 4c2.5 0 4.5 2 4.5 4.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -128,17 +193,18 @@
     </div>
   </footer>
 
-  <!-- LIVE CHAT -->
+  <!-- 🗨️ TAWK.TO LIVE CHAT -->
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
-    (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/68d53d445397c6194e55f666/1i7j5kdfl';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/68d53d445397c6194e55f666/1i7j5kdfl';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
+
 </body>
 </html>
