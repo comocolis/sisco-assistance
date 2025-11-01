@@ -153,22 +153,23 @@
       </div>
     </div>
   </section>
-  <!-- FOOTER -->
-  <footer class="bg-gradient-to-r from-blue-50 to-green-50 py-10 mt-16 border-t border-gray-200">
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 text-sm">
-      
-      <!-- Zone -->
-      <div class="flex items-start space-x-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M12 11c1.656 0 3-1.344 3-3S13.656 5 12 5 9 6.344 9 8s1.344 3 3 3z" />
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M12 22s8-4.438 8-10a8 8 0 10-16 0c0 5.562 8 10 8 10z" />
-        </svg>
-        <p><strong>Zone d’intervention :</strong><br>Île-de-France</p>
-      </div>
+ <!-- FOOTER -->
+<footer class="bg-gradient-to-r from-blue-50 to-green-50 py-10 mt-16 border-t border-gray-200">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 text-sm">
+    
+    <!-- Zone -->
+    <div class="flex items-start space-x-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 11c1.656 0 3-1.344 3-3S13.656 5 12 5 9 6.344 9 8s1.344 3 3 3z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 22s8-4.438 8-10a8 8 0 10-16 0c0 5.562 8 10 8 10z" />
+      </svg>
+      <p><strong>Zone d’intervention :</strong><br>Île-de-France</p>
+    </div>
 
-      <!-- Contact -->
+    <!-- Contact -->
+    <div class="flex flex-col space-y-2">
       <div class="flex items-start space-x-3">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -183,28 +184,34 @@
         </p>
       </div>
 
-      <!-- Signature -->
-      <div class="flex items-start space-x-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09A6.003 6.003 0 0118 4c2.5 0 4.5 2 4.5 4.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-        </svg>
-        <p>Made with ❤️ by Sisco Assistance Informatique</p>
-      </div>
+      <!-- Bouton de chat -->
+      <button 
+        onclick="if (window.Tawk_API && Tawk_API.toggle) { Tawk_API.toggle(); } else { alert('Le chat est en cours de chargement...'); }" 
+        class="mt-4 bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900 transition self-start">
+        💬 Discuter en direct
+      </button>
     </div>
-  </footer>
 
-  <!-- 🗨️ TAWK.TO LIVE CHAT -->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/68d53d445397c6194e55f666/1i7j5kdfl';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
+    <!-- Signature -->
+    <div class="flex items-start space-x-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09A6.003 6.003 0 0118 4c2.5 0 4.5 2 4.5 4.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <p>Made with ❤️ by Sisco Assistance Informatique</p>
+    </div>
+  </div>
+</footer>
 
-</body>
-</html>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/68d53d445397c6194e55f666/1j90kkm85';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
