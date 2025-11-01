@@ -3,142 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sisco Assistance Informatique – Assistance rapide et fiable en Île-de-France. Dépannage, installation, optimisation et formation informatique à domicile." />
-  <title>Sisco Assistance Informatique – Dépannage & Services en Île-de-France</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcCAYAAAAbWs+BAABIiElEQVR42u2deZxcVZn3f88591ZV70v2hYR9SUDBqKOgBEQRRVmEahR1HHUIjozLMKPiMlYXKoqOC+rMvDAggwhIFzsugAhp9mAChCQNSci+d9J7d1Xde895nvePe6vTidlJMAzn+/kknXR31T117vnd..." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-  </style>
+  <meta name="description" content="Assistance informatique à domicile et à distance en Île-de-France. Dépannage, installation de logiciels, optimisation et formation personnalisée." />
+  <meta name="author" content="Sisco Assistance Informatique" />
+  <title>Sisco Assistance Informatique | Île-de-France</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <div class="flex items-center space-x-3">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcCAYAAAAbWs+BAABIiElEQVR42u2deZxcVZn3f88591ZV70v2hYR9SUDBqKOgBEQRRVmEahR1HHUIjozLMKPiMlYXKoqOC+rMvDAggwhIFzsugAhp9mAChCQNSci+d9J7d1Xde895nvePe6vTidlJMAzn+/kknXR31T117vnd..." alt="Sisco Assistance Informatique Logo" class="h-10 w-auto">
-        <span class="text-lg font-semibold text-gray-700">Sisco Assistance Informatique</span>
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-2">
+        <!-- Replace with Base64 logo -->
+        <img src="https://images.unsplash.com/photo-1581092334494-7b06a1b6f9c4?w=80" alt="Logo Sisco Assistance Informatique" class="w-10 h-10 rounded-full shadow-sm">
+        <h1 class="text-lg font-semibold text-blue-700">Sisco Assistance Informatique</h1>
       </div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#accueil" class="text-gray-600 hover:text-teal-600">Accueil</a>
-        <a href="#services" class="text-gray-600 hover:text-teal-600">Services</a>
-        <a href="#apropos" class="text-gray-600 hover:text-teal-600">À propos</a>
-        <a href="#contact" class="text-gray-600 hover:text-teal-600">Contact</a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#home" class="hover:text-green-600">Accueil</a>
+        <a href="#services" class="hover:text-green-600">Services</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="accueil" class="pt-28 pb-20 bg-gradient-to-b from-white to-teal-50 text-center fade-in">
-    <h1 class="text-3xl md:text-5xl font-bold text-teal-700">Assistance Informatique Rapide & Fiable</h1>
-    <p class="mt-4 text-lg text-gray-600">Dépannage, installation, optimisation et formation à domicile en Île-de-France.</p>
-    <button onclick="openChat()" class="mt-8 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-md transition">Discuter maintenant</button>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="max-w-6xl mx-auto px-4 py-16 fade-in">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Nos Services</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white rounded-2xl shadow p-6">
-        <h3 class="text-xl font-semibold text-teal-700 mb-4">Ordinateurs portables et de bureau</h3>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Ordinateur lent ou qui ne démarre plus</li>
-          <li>Écran bloqué, messages d’erreurs</li>
-          <li>Installation de logiciels, configuration imprimante, connexion Internet</li>
-          <li>Nettoyage et optimisation (virus, lenteur, mises à jour)</li>
-        </ul>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow p-6">
-        <h3 class="text-xl font-semibold text-teal-700 mb-4">Téléphones et tablettes</h3>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Problèmes d’applications ou de connexion</li>
-          <li>Réglages, mise à jour, mémoire pleine</li>
-        </ul>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow p-6">
-        <h3 class="text-xl font-semibold text-teal-700 mb-4">Internet, réseaux sociaux & création digitale</h3>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Création d’un site web pour votre business</li>
-          <li>Promouvoir votre business et votre présence en ligne</li>
-          <li>Mot de passe oublié ou compte bloqué</li>
-          <li>Paramétrage et sécurisation des comptes</li>
-          <li>Aide pour la messagerie (Gmail, Outlook, etc.)</li>
-        </ul>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow p-6">
-        <h3 class="text-xl font-semibold text-teal-700 mb-4">Installation & activation de logiciels</h3>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Pack Office</li>
-          <li>Photoshop</li>
-          <li>AutoCAD</li>
-          <li>Autres logiciels sur demande</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="apropos" class="bg-teal-50 py-16 fade-in">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-teal-700 mb-6">À propos</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Avec plusieurs années d’expérience en assistance informatique, <strong>Sisco Assistance Informatique</strong> intervient rapidement pour résoudre vos problèmes sur ordinateur, tablette ou smartphone.
-        Professionnalisme, pédagogie et réactivité sont nos priorités. Nous vous accompagnons dans vos besoins numériques, personnels ou professionnels.
+  <!-- HERO -->
+  <section id="home" class="text-center py-16 bg-gradient-to-b from-blue-50 to-green-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
+        Assistance Informatique à Domicile & à Distance
+      </h2>
+      <p class="text-lg text-gray-700 mb-8">
+        Dépannage, installation, maintenance et accompagnement en Île-de-France.
       </p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="max-w-4xl mx-auto px-4 py-16 text-center fade-in">
-    <h2 class="text-3xl font-bold text-gray-800 mb-8">Contact</h2>
-    <p class="text-gray-700 mb-4">📞 <strong>+33 7 58 76 07 43</strong></p>
-    <p class="text-gray-700 mb-4">📧 <a href="mailto:sisco.assistance.informatique@gmail.com" class="text-teal-600 hover:underline">sisco.assistance.informatique@gmail.com</a></p>
-    <p class="text-gray-700 mb-6">🌍 Île-de-France</p>
-    <a href="https://www.allovoisins.com/p/siscoservice?object_id=5459&source_type=neighbors_disconnected" target="_blank" class="text-blue-600 hover:underline">Voir mon profil AlloVoisins</a>
-
-    <div class="mt-10">
-      <button onclick="openChat()" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-md transition">
-        💬 Demander un devis
+      <button onclick="Tawk_API.toggle();" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">
+        Demander un devis
       </button>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-300 text-center py-6">
-    <p>&copy; 2025 Sisco Assistance Informatique – Tous droits réservés.</p>
+  <!-- SERVICES -->
+  <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">Nos Services</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Example service block -->
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Réparation ordinateurs" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Ordinateurs portables et de bureau</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Diagnostic, réparation, installation de logiciels, configuration d’imprimante et optimisation.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1580894908361-967195033215?w=800" alt="Téléphones et tablettes" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Téléphones et tablettes</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Problèmes d’applications, mémoire pleine, mises à jour et réglages de comptes mobiles.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800" alt="Création digitale" class="rounded-lg shadow mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Création digitale & site web</h4>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Création de sites vitrines et accompagnement pour promouvoir votre activité en ligne.
+          </p>
+        </div>
+        <!-- Duplicate the same pattern for remaining categories -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-green-50 py-16 text-center">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6">Besoin d’aide ou d’un devis ?</h3>
+      <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
+        Contactez-moi pour toute assistance informatique à domicile ou à distance en Île-de-France.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+        <a href="mailto:sisco.assistance.informatique@gmail.com" class="bg-blue-700 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800">✉️ Envoyer un e-mail</a>
+        <a href="tel:+33758760743" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700">📞 Appeler maintenant</a>
+        <button onclick="Tawk_API.toggle();" class="bg-gray-800 text-white px-6 py-3 rounded-lg shadow hover:bg-gray-900">💬 Discuter en direct</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-r from-blue-50 to-green-50 py-10 mt-16 border-t border-gray-200">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 text-sm">
+      <div class="flex items-start space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 11c1.656 0 3-1.344 3-3S13.656 5 12 5 9 6.344 9 8s1.344 3 3 3z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 22s8-4.438 8-10a8 8 0 10-16 0c0 5.562 8 10 8 10z" />
+        </svg>
+        <p><strong>Zone d’intervention :</strong><br>Île-de-France</p>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 14v7m0-7a7 7 0 100-14 7 7 0 000 14z" />
+        </svg>
+        <p>
+          <strong>Contact :</strong><br>
+          ✉️ <a href="mailto:sisco.assistance.informatique@gmail.com" class="hover:text-blue-700">sisco.assistance.informatique@gmail.com</a><br>
+          📞 <a href="tel:+33758760743" class="hover:text-blue-700">+33 7 58 76 07 43</a>
+        </p>
+      </div>
+
+      <div class="flex items-start space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09A6.003 6.003 0 0118 4c2.5 0 4.5 2 4.5 4.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <p>Made with ❤️ by Sisco Assistance Informatique</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- Fade-in Animation Script -->
-  <script>
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-    fadeEls.forEach(el => observer.observe(el));
-  </script>
-
-  <!-- Tawk.to Live Chat -->
+  <!-- LIVE CHAT -->
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
     (function(){
       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
       s1.async=true;
-      s1.src='https://embed.tawk.to/68d53d445397c6194e55f666/1';
+      s1.src='https://embed.tawk.to/68d53d445397c6194e55f666/1i7j5kdfl';
       s1.charset='UTF-8';
       s1.setAttribute('crossorigin','*');
       s0.parentNode.insertBefore(s1,s0);
     })();
-
-    function openChat() {
-      if (Tawk_API && Tawk_API.maximize) Tawk_API.maximize();
-    }
   </script>
 </body>
 </html>
